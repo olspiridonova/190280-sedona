@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Седона: отели</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header container">
 			<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Cedona"></a>
-			<ul>
+			<ul class="clearfix">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
@@ -17,32 +18,30 @@
 		</header>
 		<main class="container">
 			<section class="form-container">
-				<form action="https://echo.htmlacademy.ru" method="get">
-					<div class="hotels-form clearfix">
-						<div class="hotels-form-group">
-							<p>Инфраструктура:</p>
-							<input type="checkbox" name="pool-field" id="pool" checked>
-							<label for="pool">Бассейн</label>
-							<br>
-							<input type="checkbox" name="parking" id="parking-field">
-							<label for="parking-field">Парковка</label>
-							<br>
-							<input type="checkbox" name="wi-fi" id="wi-fi-field">
-							<label for="wi-fi-field">Wi-Fi</label>
-					
-						</div>
-						<div class="hotels-form-group">
-							<p>Тип жилья:</p>
-							<input type="checkbox" name="hotel-field" id="hotel" checked>
-							<label for="hotel">Гостиница</label>
-							<br>
-							<input type="checkbox" name="motel-field" id="motel" checked>
-							<label for="motel">Мотель</label>
-							<br>
-							<input type="checkbox" name="apartments-field" id="apartments" checked>
-							<label for="apartments">Апартаменты</label>
-						</div>
-						<div class="container-price">
+				<form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
+					<div class="hotels-form-group">
+						<p>Инфраструктура:</p>
+						<input type="checkbox" name="pool-field" id="pool" checked>
+						<label for="pool">Бассейн</label>
+						<br>
+						<input type="checkbox" name="parking" id="parking-field">
+						<label for="parking-field">Парковка</label>
+						<br>
+						<input type="checkbox" name="wi-fi" id="wi-fi-field">
+						<label for="wi-fi-field">Wi-Fi</label>
+					</div>
+					<div class="hotels-form-group">
+						<p>Тип жилья:</p>
+						<input type="checkbox" name="hotel-field" id="hotel" checked>
+						<label for="hotel">Гостиница</label>
+						<br>
+						<input type="checkbox" name="motel-field" id="motel" checked>
+						<label for="motel">Мотель</label>
+						<br>
+						<input type="checkbox" name="apartments-field" id="apartments" checked>
+						<label for="apartments">Апартаменты</label>
+					</div>
+					<div class="container-price">
 						<p>Стоимость в сутки (р):</p>
 						<div class="range-controls">
 							<div class="scale"></div>
@@ -55,29 +54,28 @@
 						</div>
 						<input type="submit" name="btn" value="Показать">	
 					</div>
-						
-					</div>
 				</form>
 			</section>
 			<section class="search clearfix">
 				<div class="container clearfix">
-					<div class="sort">
+					<div class="sort clearfix">
 						<div class="search-gallery">
 							<h3>Найдено: 3</h3>
 						</div>
 						<div class="search-item">
-							<div>
-								<p>Сортировка:</p>
-							</div>
+							
+								<p>Сортировка:
 								<a href="#">по цене</a>
 								<a href="#">по типу</a>
 								<a href="#">по рейтингу</a>
+								</p>
 						</div>
-					</div>
-					<div class="search-ratio">
+						<div class="search-ratio">
 						<a href="#">1</a>
 						<a href="#">2</a>
 					</div>
+					</div>
+					
 				</div>
 				<div class="hotels-container">
 					<figure class="search-gallery">
@@ -142,8 +140,8 @@
 				</div>
 			</section>
 		</main>
-		<footer>
-			<div class="footer-ref">
+		<footer class="container clearfix">
+			<div class="footer-ref clearfix">
 				<a href="#">#visitsedona</a>
 			</div>
 			<div class="footer-social">

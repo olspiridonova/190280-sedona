@@ -3,22 +3,27 @@
  ***********************************/
 
 body {
+	background-color: #f2f2f2;
 	font-family: "PT sans";
 	font-size: 14px;
 	text-transform: uppercase;
 }
 
+ul {
+	margin: 0;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: blue;
+	
 }
 
 .clearfix:after {
 	display: table;
 	content: "";
 	clear: both;
-	background-color: green;
+	
 }
 
 h2 {
@@ -27,6 +32,7 @@ h2 {
 }
 
 h3 {
+	margin: 0;
 	font-size: 21px;
 	font-weight: bold;
 }
@@ -39,20 +45,21 @@ h3 {
 .main-header li:nth-of-type(2)  {
 	float: left;
 	width: 20%;
-	background-color: yellow;
+	
 }
 
 .main-header li:nth-of-type(3),
 .main-header li:last-of-type {
 	float: right;
 	width: 20%;
-	background-color: red;
+	
 }
 
 .main-header {
 	position: relative;
 	min-height: 60px;
-	margin-bottom: -20px;
+	
+	background-color: #ffffff;
 }
 
 .main-header>a {
@@ -70,29 +77,29 @@ h3 {
 	margin: 0 auto;
 	padding-top: 65px;
 	text-align: center;
-	background-color: red;
+	
 }
 
 
-.photo img {
+.photo {
 	float: left;
-	width: 66%;
+	width: 66.666%;
 }
 
 .text {
 	float: left;
-	width: 33%;
+	width: 33.333%;
 	padding-top: 55px;
 	text-align: center;
 }
 
 .features-main {
 	float: left;
-	width: 33%;
+	width: 33.333%;
 	min-height: 330px;
 	vertical-align: middle;
 	text-align: center;
-	background-color: yellow;
+	
 }
 
 .features-main img {
@@ -104,37 +111,53 @@ h3 {
 
 .features-content {
 	float: left;
-	width: 33%;
+	width: 33.333%;
 	min-height: 255px;
-	background-color: yellow;
+	text-align: center;
+	
 }
 
 .booking-header {
 	width: 40%;
 	min-height: 205px;
 	margin: 0 auto;
+	padding-top: 60px;
 	text-align: center;
-	background-color: green;
+	
 }
 
 .booking-form .wrapper {
 	width: 570px;
 	margin: 0 auto;
 	text-align: center;
-	background-color: green;
+	
 }
 
-.booking-form h3 {
+.booking-form-header {
+	width: 570px;
 	min-height: 85px;
-	background-color: white;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #766357;
 }
 
-.booking-form .wrapper {
-	position: relative;
-	min-height: 480px;
-	margin-bottom: -395px;
-	padding-bottom: 30px;
+.booking-form-header a {
+	color: #ffffff;
+	
+}
+
+.form-wrapper {
+	margin: 0 auto;
+}
+
+.hotel-search-form {
+	position: absolute;
+	width: 570px;
+	left: 315px;
 	z-index: 1;
+	background-color: white;
+
 }
 
 .booking-form-group:first-of-type {
@@ -152,7 +175,7 @@ h3 {
 
 .form-container {
 	padding-top: 35px;
-	background-color: red;
+	
 }
 
 .hotels-form-group {
@@ -164,7 +187,7 @@ h3 {
 
 .hotels-container {
 	min-height: 155px;
-	background-color: yellow;
+	
 }
 
 .container-price {
@@ -173,14 +196,19 @@ h3 {
 
 .search-gallery {
 	float: left;
-	width: 140px;
+	width: 135px;
 	background-color: white;
+}
+
+figure {
+	height: 90px;
 }
 
 .search-item {
 	float: left;
 	width: 750px;
-	background-color: red;
+	min-height: 90px;
+	
 }
 
 .search-item-description {
@@ -195,6 +223,7 @@ h3 {
 
 .search-ratio {
 	float: right;
+	min-height: 90px;
 	background-color: white;
 }
 
@@ -208,22 +237,22 @@ footer {
 
 .footer-ref {
 	float: left;
-	width: 150px;
-	margin-left: 125px;
+	width: 33.333%;
+	text-align: center;
 	background-color: white;
 }
 
 .footer-social {
 	float: left;
-	width: 275px;
-	margin-left: 255px;
+	width: 33.333%;
+	text-align: center;
 	background-color: white;
 }
 
 .footer-copyright {
 	float: left;
-	width: 200px;
-	margin-left: 100px;
+	width: 33.333%;
+	text-align: center;
 	background-color: white;
 }
 

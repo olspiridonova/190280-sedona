@@ -3,19 +3,18 @@
 	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Седона</title>
+    	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
   	</head>
   	<body>
 		<header class="main-header container">
 			<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Cedona"></a>
-			<div class="clearfix">
-			<ul>
+			<ul class="clearfix">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
 				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
-			</div>
 		</header>
 		<main class="container">
 			<figure>
@@ -32,9 +31,8 @@
 						<p>№1</p>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
-					<div class="photo">
-						<img src="img/index-photo-city.jpg" alt="Седона">
-					</div>
+					<img class="photo" src="img/index-photo-city.jpg" alt="Седона">
+					
 				</div>
 				<div class="features-container clearfix">
 					<div class="features-main">
@@ -54,9 +52,7 @@
 					</div>
 				</div>
 				<div class="features-container clearfix">
-					<div class="photo">
-						<img src="img/index-photo-bridge.jpg" alt="Мост дьявола">
-					</div>
+					<img class="photo" src="img/index-photo-bridge.jpg" alt="Мост дьявола">
 					<div class="text">
 						<h3>Там есть мост дьявола</h3>
 						<p>№2</p>
@@ -89,11 +85,12 @@
 					
 				</div>
 				<div class="booking-form">
-
-					<form action="https://echo.htmlacademy.ru" method="get">
+					<div class="booking-form-header">
+						<a href="#"><h3> Поиск гостиницы в Седоне</h3></a>
+					</div>
+					<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
 						<div class="wrapper">
-							<h3><a href="#"> Поиск гостиницы в Седоне</a></h3>
-						
+							
 							<div class="booking-form-group">
 								<label for="in">Дата заезда:</label>
 								<input type="date" name="in-field" id="in">
@@ -110,18 +107,14 @@
 							</div>
 							<input type="submit" name="btn" value="Найти">
 						</div>
-							<img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта">
-						
-
 					</form>
-
+					
+					<img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта">
 				</div>
 			</section>
-			
-			
 		</main>
 		<footer class="container clearfix">
-			<div class="footer-ref">
+			<div class="footer-ref clearfix">
 				<a href="#">#visitsedona</a>
 			</div>
 			<div class="footer-social">
