@@ -2,6 +2,10 @@
  GENERAL 
  ***********************************/
 
+* {
+	outline: 1px dashed red;
+}
+
 body {
 	background-color: #f2f2f2;
 	font-family: "PT sans";
@@ -11,6 +15,7 @@ body {
 
 ul {
 	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -32,7 +37,6 @@ h2 {
 }
 
 h3 {
-	margin: 0;
 	font-size: 21px;
 	font-weight: bold;
 }
@@ -40,6 +44,8 @@ h3 {
 a {
 	text-decoration: none;
 }
+
+
 
 /**********************************
  HEADER 
@@ -57,18 +63,23 @@ a {
 	list-style: none;
 }
 
-.main-header li:first-of-type,
-.main-header li:nth-of-type(2)  {
+.main-header-menu:first-of-type {
 	float: left;
-	width: 20%;
-	
+	width: 40%;
+	font-size: 0;
 }
 
-.main-header li:nth-of-type(3),
-.main-header li:last-of-type {
+.main-header-menu:last-of-type {
 	float: right;
-	width: 20%;
-	
+	width: 40%;
+	font-size: 0;
+}
+
+.main-header-menu li {
+	display: inline-block;
+	width: 50%;
+	font-size: 14px;
+	text-align: center;
 }
 
 .main-header a {
@@ -85,12 +96,23 @@ a {
  INDEX 
  ***********************************/
 
+.photo-logo {
+	width: 1200px;
+	height: 510px;
+}
+
 .head {
+	box-sizing: border-box;
 	width: 45%;
 	min-height: 215px;
 	margin: 0 auto;
-	padding-top: 65px;	
+	padding-top: 30px;	
+	padding-bottom: 55px;
 	text-align: center;
+}
+
+.head h3 {
+	padding-bottom: 20px;
 }
 
 .features .container {
@@ -196,18 +218,22 @@ a {
 
 .form-container {
 	padding-top: 35px;
-	
+	background-color: red;
+	background-image: url("../img/hotels-background.jpg");
+}
+
+.wrapper {
+	width: 88%;
+	margin: 0 auto;
 }
 
 .hotels-form-group {
 	float: left;
 	width: 185px;
-	padding-left: 70px;
-	background-color: white;
 }
 
 .hotels-container {
-	min-height: 155px;	
+	min-height: 155px;
 }
 
 .container-price {
