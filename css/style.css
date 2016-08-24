@@ -292,8 +292,10 @@ a {
 }
 
 .booking-form-group input {
+	display: inline-block;
+	vertical-align: middle;
 	border: none;
-
+	font-size: 14px;
 }
 
 .booking-form-group input[type="date"] {
@@ -406,6 +408,7 @@ input[type="checkbox"] + label {
 	margin: 5px 0;
 	padding-left: 40px;
 	line-height: 21px;
+	cursor: pointer;
 }
 
 input[type="checkbox"] + label:before {
@@ -453,6 +456,14 @@ input[type="checkbox"]:checked + label:before {
 	border-radius: 1px;
 }
 
+.container-price input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	border: 2px solid #ffffff;
+	border-radius: 1px;
+}
+
 .scale {
 	float: right;
 	width: 320px;
@@ -467,19 +478,18 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hotels-container {
+	box-sizing: border-box;
 	min-height: 150px;
 	width: 88%;
 	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .search-gallery {
 	float: left;
 	width: 135px;
 	background-color: white;
-}
-
-.hotels-container figure {
-	margin-top: 30px;
 }
 
 .hotels-container img {
@@ -526,12 +536,11 @@ input[type="checkbox"]:checked + label:before {
 .search-item {
 	float: left;
 	width: 750px;
-	padding-top: 5px;
 	padding-left: 30px;	
 }
 
 .search-item h3 {
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .search-item a{
@@ -560,10 +569,23 @@ input[type="checkbox"]:checked + label:before {
 .search-ratio {
 	float: right;
 	background-color: white;
+	font-size: 23px;
 }
 
-.search-ratio div {
-	padding-top: 30px;
+.search-ratio div:first-child {
+	margin-bottom: 43px;
+}
+
+.search-ratio div:last-child {
+	box-sizing: border-box;
+	width: 111px;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 27px;
+	background-color: #f2f2f2;
+	color: #666666;
 }
 
 .search-ratio span {
