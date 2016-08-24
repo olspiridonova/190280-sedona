@@ -284,6 +284,7 @@ a {
 
 .booking-form-group {
 	padding-bottom: 29px;
+	font-size: 0;
 }
 
 .booking-form-group:first-of-type {
@@ -312,16 +313,47 @@ a {
 .booking-form-group label[for="out"],
 .booking-form-group label[for="adult"] {
 	display: inline-block;
+	position: relative;
+	vertical-align: middle;
 	width: 108px;
 	font-weight: bold;
 	text-align: left;
-
+	font-size: 14px;
 }
 
 .booking-form-group label[for="children"] {
-
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
 	width: 65px;
 	margin-left: 54px;
+	font-weight: bold;
+	text-align: left;
+	font-size: 14px;
+}
+
+
+
+.hotel-search-form input[type="submit"] {
+	width: 456px;
+	height: 58px;
+	margin-top: 25px;
+	margin-bottom: 57px;
+	background-color: #81b3d2;
+	border: none;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hotel-search-form input[type="submit"]:hover {
+	background-color: #669ec0;
+}
+
+.hotel-search-form input[type="submit"]:active {
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 
 .map {
@@ -342,9 +374,13 @@ a {
 	color: #ffffff;
 }
 
-.wrapper {
+.form-container form {
 	width: 88%;
 	margin: 0 auto;
+}
+
+.wrapper {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-form-group {
@@ -385,16 +421,55 @@ input[type="checkbox"]:checked + label:before {
 	content: "\2611";
 }
 
-.hotels-container {
-	min-height: 150px;
-}
 
 .container-price {
 	float: right;
+	position: relative;
+	min-width: 328px;
+}
+
+.container-price p {
+	margin-top: 17px;
+	margin-bottom: 14px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.container-price input {
+	width: 155px;
+	height: 30px;
+	background-color: transparent;
+	color: #ffffff;
+	border: none;
+	text-align: center;
+}
+
+.price-controls {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 1px;
+}
+
+.scale {
+	float: right;
+	width: 320px;
+	margin-bottom: 32px;
+	border: 1px solid white;
 }
 
 .sort {
 	min-height: 86px;
+	width: 88%;
+	margin: 0 auto;
+}
+
+.hotels-container {
+	min-height: 150px;
+	width: 88%;
+	margin: 0 auto;
 }
 
 .search-gallery {
@@ -535,9 +610,17 @@ footer {
 	line-height: 46px;
 	text-align: center;
 	font-size: 0;
-	background-color: #2b5c7a;
+	background-color: #81b3d2;
 	color: #ffffff;
-	
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 
 .social-btn:last-child {
@@ -568,3 +651,6 @@ footer {
 .footer-copyright img {
 	vertical-align: middle;
 }
+
+
+

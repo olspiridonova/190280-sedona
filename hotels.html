@@ -21,7 +21,7 @@
 		</header>
 		<main class="container">
 			<section class="form-container">
-				<div class="wrapper">
+				
 					<form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
 						<div class="hotels-form-group">
 							<p>Инфраструктура:</p>
@@ -45,21 +45,24 @@
 							<input type="checkbox" name="apartments-field" id="apartments" checked>
 							<label for="apartments">Апартаменты</label>
 						</div>
-						<div class="container-price">
+						<div class="container-price clearfix">
+						
 							<p>Стоимость в сутки (р):</p>
+							<div class="price-controls">
+								<input class="min-price" type="text" name="min-price" value="ОТ 0">
+								<input class="max-price" type="text" name="max-price" value="ДО 3000">
+							</div>
+							
+
 							<div class="range-controls">
 								<div class="scale"></div>
 								<div class="toggle min-toggle"></div>
 								<div class="toggle max-toggle"></div>
 							</div>
-							<div class="price-controls">
-								<input class="min-price" type="text" name="min-price" value="от 0">
-								<input class="max-price" type="text" name="max-price" value="до 3000">
-							</div>
 							<input type="submit" name="btn" value="Показать">	
 						</div>
 					</form>
-				</div>
+				
 			</section>
 			<section class="search">
 				<div class="wrapper">
@@ -165,9 +168,9 @@
 				<a href="#">#visitsedona</a>
 			</div>
 			<div class="footer-social">
-				<a href="#" class="social-btn">twitter<span class="icon-twitter"></span></a>
-				<a href="#" class="social-btn">facebook<span class="icon-facebook"></span></a>
-				<a href="#" class="social-btn">youtube<span class="icon-youtube"></span></a>
+				<a href="https://twitter.com/search?q=%23sedona&src=tyah" class="social-btn">twitter<span class="icon-twitter"></span></a>
+				<a href="https://www.facebook.com/places/Cem-mozno-zanatsa-v-Sedona/109433465748891/" class="social-btn">facebook<span class="icon-facebook"></span></a>
+				<a href="https://www.youtube.com/watch?v=YDPXgW0SoDg" class="social-btn">youtube<span class="icon-youtube"></span></a>
 			</div>
 			<div class="footer-copyright">
 				<p>website by <a href="https://htmlacademy.ru/"><img src="img/html-academy.png" alt="html academy"></a></p>
