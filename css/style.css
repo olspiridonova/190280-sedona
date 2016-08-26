@@ -6,14 +6,6 @@
 	outline: 1px dashed red;
 }
 
-body {
-	min-width: 1200px;
-	background-color: #f2f2f2;
-	font-family: "PT sans", "Arial", sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -22,6 +14,32 @@ body {
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "pt_sans";
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+         url("../fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "pt_sansbold";
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+         url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	min-width: 1200px;
+	background-color: #f2f2f2;
+	font-family: "pt_sans";
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
@@ -79,13 +97,13 @@ img {
 }
 
 h2 {
+	font-family: "pt_sansbold";
 	font-size: 30px;
-	font-weight: bold;
 }
 
 h3 {
+	font-family: "pt_sansbold";
 	font-size: 21px;
-	font-weight: bold;
 }
 
 
@@ -101,10 +119,15 @@ a {
 
 
 
+header {
+	min-height: 55px;
+}
+
 .main-header {
 	box-sizing: border-box;
 	position: relative;
-	min-height: 55px;
+	width: 88%;
+	margin: 0 auto;
 }
 
 .main-header li {
@@ -136,7 +159,6 @@ a {
 
 .main-header a {
 	line-height: 26px;
-	font-weight: bold;
 	color: #000000;
 }
 
@@ -204,6 +226,7 @@ a {
 	width: 33.333%;
 	padding-top: 55px;
 	text-align: center;
+	color: #ffffff;
 }
 
 .features-main {
@@ -394,7 +417,7 @@ a {
 .hotels-form-group p {
 	margin-top: 18px;
 	margin-bottom: 26px;
-	font-weight: 700;
+	font-family: "pt_sansbold";
 	font-size: 16px;
 }
 
@@ -497,8 +520,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hotels-container p {
-	margin-top: 10px;
-	margin-bottom: 16px;
+	margin-top: 13px;
+	margin-bottom: 17px;
 }
 
 .hotels-container .btn {
@@ -541,6 +564,8 @@ input[type="checkbox"]:checked + label:before {
 
 .search-item h3 {
 	margin: 0;
+	margin-top: -2px;
+	line-height: 21px;
 }
 
 .search-item a{
@@ -563,13 +588,12 @@ input[type="checkbox"]:checked + label:before {
 
 .search-item-booking {
 	float: left;
-	width: 145px;
+	width: 142px;
 }
 
 .search-ratio {
 	float: right;
 	background-color: white;
-	font-size: 23px;
 }
 
 .search-ratio div:first-child {
@@ -599,7 +623,7 @@ input[type="checkbox"]:checked + label:before {
  ***********************************/
 footer {
 	min-height: 120px;
-	padding-top: 35px;
+	padding-top: 37px;
 }
 
 .footer-ref {
