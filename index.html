@@ -6,9 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
   	</head>
-  	<body>
-		<header class="container clearfix">
-		<div class="main-header">
+  	<body class="index">
+		<header class="main-header container clearfix">
 			<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Cedona"></a>
 			<ul class="main-header-menu">
 				<li><a href="#">Информация</a></li>
@@ -18,66 +17,60 @@
 				<li><a href="#">Карта штата</a></li>
 				<li><a href="hotels.html">Гостиницы</a></li>
 			</ul>
-		</div>
 		</header>
 		<main class="container">
 			<figure class="photo-logo">
 				<img src="img/index-logo.jpg" width="1200" height="510" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
 			</figure>
 			<div class="head">
-				<h3>Седона – небольшой городок в Аризоне, заслуживающий большего!</h3>
+				<h3>Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</div>
 			<section class="features">
 				<div class="container clearfix">
 					<div class="text">
-						<h3>Настоящий городок</h3>
-						<p>№1</p>
+						<h3>Настоящий <br>городок</h3>
+						<p>&ndash; &#x2116; 1 &ndash;</p>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
-					<img class="photo" src="img/index-photo-city.jpg" alt="Седона">
-					
+					<div class="photo">
+					</div>
 				</div>
 				<div class="features-container clearfix">
 					<div class="features-main">
-					<div class="image">
-						<img src="img/home.png" width="75" height="72" alt="Жилье">
-					</div>
-						<h3>Жилье</h3>
-						<p>Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+						<h3 class="home">Жилье</h3>
+						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 					<div class="features-main">
-						<img src="img/food.png" width="74" height="70" alt="Еда">
-						<h3>Еда</h3>
+						<h3 class="food">Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</div>
 					<div class="features-main">
-						<img src="img/present.png" width="64" height="76" alt="Сувениры">
-						<h3>Сувениры</h3>
+						<h3 class="present">Сувениры</h3>
 						<p>Не только китайского, но и местного производства!</p>
 					</div>
 				</div>
 				<div class="container clearfix">
 					<img class="photo" src="img/index-photo-bridge.jpg" alt="Мост дьявола">
 					<div class="text">
-						<h3>Там есть мост дьявола</h3>
+						<h3>Там есть <br>мост дьявола</h3>
 						<p>№2</p>
 						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
 				</div>
 				<div class="features-container clearfix">
 					<div class="features-content">
-						<h3>Небольшая площадь</h3>
+						<h3>Небольшая <br>площадь</h3>
 						<p>№3</p>
 						<p>Все достопримечательности находяться очень близко</p>
 					</div>
 					<div class="features-content">
-						<h3>Красивая дорога</h3>
+						<h3>Красивая <br>дорога</h3>
 						<p>№4</p>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</div>
 					<div class="features-content">
-						<h3>Мало туристов</h3>
+						<h3>Мало <br>туристов</h3>
 						<p>№5</p>
 						<p>Большинство едет в Гранд каньон и толпится там</p>
 					</div>
@@ -98,18 +91,20 @@
 						<div class="wrapper">
 							
 							<div class="booking-form-group">
-								<label for="in">Дата заезда:</label>
+								<label for="in">Дата заезда:<a class="icon-calendar" href="#"></a></label>
+
 								<input type="date" name="in-field" id="in">
+								
 							</div>
 							<div class="booking-form-group">
-								<label for="out">Дата выезда:</label>
+								<label for="out">Дата выезда:<a class="icon-calendar" href="#"></a></label>
 								<input type="date" name="out-field" id="out">
 							</div>
 							<div class="booking-form-group">
-								<label for="adult">Взрослые:</label>
-								<input type="number" name="adult-field" id="adult">
-								<label for="children">Дети</label>
-								<input type="number" name="children-field" id="children">
+								<label for="adult">Взрослые:<a class="icon-minus" href="#"></a><a class="icon-plus" href="#"></a></label>
+								<input type="number" name="adult-field" id="adult" value="2">
+								<label for="children">Дети <a class="icon-minus" href="#"></a><a class="icon-plus" href="#"></a></label>
+								<input type="number" name="children-field" id="children" value="0">
 							</div>
 							<input type="submit" name="btn" value="Найти">
 						</div>
@@ -129,7 +124,7 @@
 				<a href="https://www.youtube.com/watch?v=YDPXgW0SoDg" class="social-btn">youtube<span class="icon-youtube"></span></a>
 			</div>
 			<div class="footer-copyright">
-				<p>website by <a href="https://htmlacademy.ru/"><img src="img/html-academy.png" alt="html academy"></a></p>
+				<p>website by <a href="https://htmlacademy.ru/"></a></p>
 			</div>
 		</footer>
   	</body>
