@@ -39,22 +39,26 @@
 							<label for="hotel">Гостиница</label>
 							<br>
 							<input type="checkbox" name="motel-field" id="motel" checked>
-							<label for="motel">Мотель</label>
+							<label for="motel">Мотель</label>		
 							<br>
 							<input type="checkbox" name="apartments-field" id="apartments" checked>
 							<label for="apartments">Апартаменты</label>
 						</div>
 						<div class="container-price clearfix">
-							<p>Стоимость в сутки (р):</p>
+							<div class="filter-range-title">Стоимость в сутки (р):</div>
+						
 							<div class="price-controls">
-								<input class="min-price" type="text" name="min-price" value="ОТ 0">
-								<input class="max-price" type="text" name="max-price" value="ДО 3000">
+								<label class="min-price"> от <input  type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 							</div>
-							<div class="range-controls">
-								<div class="scale"></div>
+							<div class="range-controls clearfix">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
 								<div class="toggle min-toggle"></div>
 								<div class="toggle max-toggle"></div>
 							</div>
+						
 							<input type="submit" name="btn" value="Показать">	
 						</div>
 					</form>
