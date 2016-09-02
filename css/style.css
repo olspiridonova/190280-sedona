@@ -92,8 +92,11 @@ ul {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
-}
+	box-shadow: 5px 0 15px rgba(0,1,1,0.2),
+				-5px 0 15px rgba(0,1,1,0.2);
 
+}
+   
 .clearfix::after {
 	display: table;
 	content: "";
@@ -129,9 +132,6 @@ a {
  HEADER 
  *******************************************
  *******************************************/
-* {
-	outline: 1px dotted red;
-}
 
 header {
 	min-height: 55px;
@@ -215,7 +215,7 @@ header {
 	display: block;
 	width: 1200px;
 	height: 508px;
-	background-color: #ae7563;
+	background-color: #5985ac;
 	background-image: url("../img/index-main-photo.jpg");
 	background-position-y: -55px;
 	background-repeat: no-repeat;
@@ -272,6 +272,7 @@ header {
 	box-sizing: border-box;
 	float: left;
 	width: 33.333%;
+	padding-bottom: 20px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -307,6 +308,7 @@ header {
 	padding-left: 55px;
 	padding-right: 55px;
 	padding-top: 141px;
+	padding-bottom: 20px;
 	vertical-align: middle;
 	text-align: center;
 	
@@ -359,13 +361,14 @@ header {
 	padding-top: 27px;
 	padding-left: 65px;
 	padding-right: 65px;
+	padding-bottom: 20px;
 	text-align: center;
 	background-color: #eeeeee;
 	line-height: 21px;
 }
 
 .features-content h3 {
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
 
 .features-content p {
@@ -422,6 +425,9 @@ header {
 
 .form-wrapper {
 	padding-left: 56px;
+	box-shadow: 7px 7px 15px rgba(0,1,1,0.15), 
+				-7px 0 15px rgba(0,1,1,0.15);
+
 }
 
 .hotel-search-form {
@@ -595,6 +601,7 @@ label[for="children"] .icon-plus {
 	font-weight: bold;
 	line-height: 26px;
 	text-transform: uppercase;
+	outline: none;
 }
 
 .hotel-search-form input[type="submit"]:hover {
@@ -604,6 +611,7 @@ label[for="children"] .icon-plus {
 .hotel-search-form input[type="submit"]:active {
 	background-color: #5496bd;
 	color: #88b6d1;
+	outline: none;
 }
 
 .map {
@@ -677,7 +685,7 @@ input[type="checkbox"]:checked + label::before {
 .container-price {
 	float: right;
 	position: relative;
-	min-width: 328px;
+	max-width: 328px;
 	font-size: 0;
 	text-transform: uppercase;
 }
@@ -713,8 +721,8 @@ input[type="checkbox"]:checked + label::before {
 .price-controls {
 	float: right;
 	position: relative;
-	width: 318px;
-	margin-bottom: 20px;
+	width: 316px;
+	margin-bottom: 24px;
 	border: 2px solid #ffffff;
 	border-radius: 1px;
 }
@@ -730,10 +738,14 @@ input[type="checkbox"]:checked + label::before {
 	background: #ffffff;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
 	width: 90px;
 	padding-left: 65px;
+}
+
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 57px;
 }
 
 .container-price input[type="submit"] {
@@ -745,12 +757,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .range-controls {
+	float: right;
 	position: relative;
 }
 
 .range-controls .scale {
-	float: right;
-	width: 320px;
+	
+	width: 318px;
 	height: 2px;
 	margin-bottom: 32px;
 	background: rgba(255, 255, 255, 0.3);
@@ -764,7 +777,7 @@ input[type="checkbox"]:checked + label::before {
 
 .toggle {
 	position: absolute;
-	top: -9px;
+	bottom: 24px;
 	width: 4px;
 	height: 4px;
 	background: #ababab;
@@ -772,6 +785,10 @@ input[type="checkbox"]:checked + label::before {
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
+}
+
+.toggle:hover {
+	background: #1c4f80;
 }
 
 .min-toggle {
@@ -783,8 +800,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .container-price input[type="submit"] {
-	width: 133px;
-	height: 32px;
+	width: 136px;
+	height: 36px;
 	border: 2px solid #ffffff;
 	border-radius: 1px;
 	color: inherit;
@@ -801,16 +818,15 @@ input[type="checkbox"]:checked + label::before {
 	padding-bottom: 30px;
 }
 
-.search-sort p {
-	font-size: 12px;
-}
-
 .search-sort a {
 	margin-left: 33px;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .search-sort a:focus {
 	color: #b3d1e4;
+	border-bottom: none;
 }
 
 .search-sort a:hover {
@@ -819,7 +835,7 @@ input[type="checkbox"]:checked + label::before {
 
 .search-sort a:active {
 	color: #000000;
-	border: none;
+	border-bottom: none;
 }
 
 
@@ -914,7 +930,8 @@ input[type="checkbox"]:checked + label::before {
 .search-sort p {
 	position: relative;
 	margin: 0;
-	line-height: 26px;
+	font-size: 12px;
+	line-height: 18px;
 	top: 5px;
 }
 
@@ -974,10 +991,11 @@ input[type="checkbox"]:checked + label::before {
 	color: #666666;
 }
 
-.search-ratio span {
+.search-ratio .icon-star {
 	float: right;
 	color: #81b3d2;
-	font-size: 17px;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 /************************************
