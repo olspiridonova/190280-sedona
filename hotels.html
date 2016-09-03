@@ -19,9 +19,9 @@
 				<li><a class="active" href="#">Гостиницы</a></li>
 			</ul>
 		</header>
-	</div>
 	
-		<main class="container">
+	
+		<main>
 			<section class="form-container">
 				
 					<form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
@@ -33,7 +33,7 @@
 							<input type="checkbox" name="parking" id="parking-field">
 							<label for="parking-field">Парковка</label>
 							<br>
-							<input type="checkbox" name="wi-fi" id="wi-fi-field">
+							<input type="checkbox" name="wi-fi" id="wi-fi-field" disabled="disabled">
 							<label for="wi-fi-field">Wi-Fi</label>
 						</div>
 						<div class="hotels-form-group">
@@ -41,7 +41,7 @@
 							<input type="checkbox" name="hotel-field" id="hotel" checked>
 							<label for="hotel">Гостиница</label>
 							<br>
-							<input type="checkbox" name="motel-field" id="motel" checked>
+							<input type="checkbox" name="motel-field" id="motel" checked disabled="disabled">
 							<label for="motel">Мотель</label>		
 							<br>
 							<input type="checkbox" name="apartments-field" id="apartments" checked>
@@ -76,14 +76,14 @@
 						</div>
 						<div class="search-sort">
 							<p>Сортировка:
-								<a href="#">по цене</a>
+								<a class="active" href="#">по цене</a>
 								<a href="#">по типу</a>
 								<a href="#">по рейтингу</a>
 							</p>
 						</div>
 						<div class="search-ratio">
 							<a class="icon-up-dir" href="#"></a>
-							<a class="icon-down-dir" href="#"></a>
+							<a class="icon-down-dir active" href="#"></a>
 						</div>
 					</div>
 				</div>
@@ -167,7 +167,7 @@
 				</div>	
 			</section>
 		</main>
-		<footer class="container clearfix">
+		<footer class="clearfix">
 			<div class="footer-ref clearfix">
 				<a href="http://visitsedona.com/social-sedona/">#visitsedona</a>
 			</div>
@@ -180,5 +180,6 @@
 				<p>website by <a href="https://htmlacademy.ru/"></a></p>
 			</div>
 		</footer>
+		</div>
 	</body>
 </html>
