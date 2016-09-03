@@ -293,6 +293,8 @@ header {
 .text h3 {
 	margin-bottom: 24px;
 	line-height: 21px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .text p {
@@ -624,7 +626,7 @@ label[for="children"] .icon-plus {
 	z-index: 0;
 }
 
-/************************************
+/**********************************
  HOTELS 
  ***********************************/
 
@@ -669,7 +671,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
 	display: block;
 	position: relative;
-	margin: 5px 0 6px 0;
+	margin: 5px 0 4px 0;
 	padding-left: 40px;
 	line-height: 21px;
 	cursor: pointer;
@@ -702,7 +704,7 @@ input[disabled="disabled"] + label {
 
 .container-price .filter-range-title {
 	margin-top: 17px;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 	line-height: 21px;
 	font-family: "pt_sansbold", Arial, sans-serif;
 	font-weight: bold;
@@ -732,7 +734,7 @@ input[disabled="disabled"] + label {
 	float: right;
 	position: relative;
 	width: 316px;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 1px;
 }
@@ -829,7 +831,7 @@ input[disabled="disabled"] + label {
 	min-height: 86px;
 	width: 88%;
 	margin: 0 auto;
-	padding-top: 30px;
+	padding-top: 29px;
 	padding-bottom: 29px;
 }
 
@@ -901,7 +903,7 @@ input[disabled="disabled"] + label {
 	min-height: 150px;
 	width: 88%;
 	margin: 0 auto;
-	padding-top: 28px;
+	padding-top: 26px;
 	padding-bottom: 25px;
 }
 
@@ -917,7 +919,7 @@ input[disabled="disabled"] + label {
 
 .hotels-container img {
 	display: block;
-	padding-top: 2px;
+	padding-top: 4px;
 }
 
 .hotels-container p {
