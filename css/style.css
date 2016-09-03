@@ -47,7 +47,7 @@
 vertical-align: baseline;
   font-weight: normal;
   line-height: 1em;
-  font-family: "symbols-sedona";
+  font-family: "symbols-sedona", Arial, sans-serif;
   text-align: center;
   text-transform: none;
   text-decoration: inherit;
@@ -372,6 +372,8 @@ header {
 }
 
 .features-content h3 {
+	padding-left: 60px;
+	padding-right: 60px;
 	margin-bottom: 24px;
 }
 
@@ -412,6 +414,7 @@ header {
 }
 
 .booking-form-header {
+	display: block;
 	box-sizing: border-box;
 	width: 568px;
 	min-height: 85px;
@@ -490,7 +493,7 @@ header {
 	text-transform: uppercase;}
 ::-moz-placeholder          {
 	padding-left: 15px;
-	font-family: "pt_sansbold", Arial, sans-serif
+	font-family: "pt_sansbold", Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
@@ -647,6 +650,11 @@ label[for="children"] .icon-plus {
 	margin: 0 auto;
 }
 
+.form-container li {
+	list-style: none;
+	margin-bottom: 26px;
+}
+
 .wrapper {
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -683,7 +691,7 @@ input[type="checkbox"] + label::before {
 	content: "\2610";
 	top: 0;
 	left: 0;
-	font-family: "symbols-sedona";
+	font-family: "symbols-sedona", Arial, sans-serif;
 	font-size: 26px;
 }
 
@@ -715,7 +723,7 @@ input[disabled="disabled"] + label {
 .container-price label {
 	display: inline-block;
 	vertical-align: top;
-	line-height: 33px;
+	line-height: 34px;
 	font-size: 14px;
 	cursor: pointer;
 }
@@ -735,7 +743,7 @@ input[disabled="disabled"] + label {
 	float: right;
 	position: relative;
 	width: 316px;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 	border: 2px solid #ffffff;
 	border-radius: 1px;
 }
@@ -1007,7 +1015,7 @@ input[disabled="disabled"] + label {
 
 .search-item-booking {
 	float: left;
-	width: 143px;
+	width: 142px;
 }
 
 .search-ratio {
