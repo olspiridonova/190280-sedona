@@ -616,6 +616,10 @@ label[for="children"] .icon-plus {
 }
 
 .map {
+	background-image: url("../img/map.jpg");
+	width: 1200px;
+	height: 596px;
+	background-repeat: no-repeat;
 	position: relative;
 	z-index: 0;
 }
