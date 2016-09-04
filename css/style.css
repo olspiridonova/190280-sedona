@@ -234,13 +234,13 @@ header {
 	width: 45%;
 	min-height: 215px;
 	margin: 0 auto;
-	padding-top: 29px;	
-	padding-bottom: 43px;
+	padding-top: 40px;	
+	padding-bottom: 42px;
 	text-align: center;
 }
 
 .head h3 {
-	padding-bottom: 21px;
+	padding-bottom: 11px;
 	line-height: 26px;
 }
 
