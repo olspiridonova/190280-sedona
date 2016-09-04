@@ -490,28 +490,35 @@ header {
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	text-transform: uppercase;}
-::-moz-placeholder          {
+	text-transform: uppercase;
+}
+
+::-moz-placeholder {
 	padding-left: 15px;
 	font-family: "pt_sansbold", Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	text-transform: uppercase;}/* Firefox 19+ */
-:-moz-placeholder           {
+	text-transform: uppercase;
+}/* Firefox 19+ */
+
+:-moz-placeholder {
 	padding-left: 15px;
 	font-family: "pt_sansbold", Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	text-transform: uppercase;}/* Firefox 18- */
-:-ms-input-placeholder      {
+	text-transform: uppercase;
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
 	padding-left: 15px;
 	font-family: "pt_sansbold", Arial, sans-serif;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	text-transform: uppercase;}
+	text-transform: uppercase;
+}
 
 .booking-form-group input {
 	box-sizing: border-box;
@@ -530,7 +537,7 @@ header {
 .booking-form-group input[name="adult-field"],
 .booking-form-group input[name="children-field"] {
 	width: 116px;
-	padding-left: 53px;
+	padding-left: 40px;
 }
 
 .booking-form-group input:hover {
@@ -730,6 +737,7 @@ input[disabled="disabled"] + label {
 
 .container-price input[type="text"] {
 	width: 50px;
+	height: 34px;
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
@@ -822,7 +830,7 @@ input[disabled="disabled"] + label {
 	border-radius: 1px;
 	color: inherit;
 	font-size: 14px;
-	background: inherit;
+	background: transparent;
 }
 
 .container-price input[type="submit"]:hover {
