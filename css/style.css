@@ -9,29 +9,28 @@
  ***********************************/
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-family: "symbols-sedona";
+	src: url("../fonts/symbols-sedona.woff") format("woff"),
+		 url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "pt_sans";
-    src: url("../fonts/ptsans.woff2") format("woff2"),
-         url("../fonts/ptsans.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+	font-family: "pt_sans";
+	src: url("../fonts/ptsans.woff2") format("woff2"),
+		 url("../fonts/ptsans.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: "pt_sansbold";
-    src: url("../fonts/ptsansbold.woff2") format("woff2"),
-         url("../fonts/ptsansbold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+	font-family: "pt_sansbold";
+	src: url("../fonts/ptsansbold.woff2") format("woff2"),
+		 url("../fonts/ptsansbold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 /***************************************
@@ -40,34 +39,65 @@
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-vertical-align: baseline;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona", Arial, sans-serif;
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	vertical-align: baseline;
+	font-weight: normal;
+	line-height: 1em;
+	font-family: "symbols-sedona", Arial, sans-serif;
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	font-style: normal;
+	font-variant: normal;
+	speak: none;
 }
 
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-calendar::before { content: "\e800"; } /* "" */
-.icon-plus::before { content: "\e801"; } /* "" */
-.icon-minus::before { content: "\e802"; } /* "" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-facebook::before {
+	content: "\66";
+} /* "f" */
+
+.icon-twitter::before {
+	content: "\74";
+} /* "t" */
+
+.icon-up-dir::before {
+	content: "\25b2";
+} /* "▲" */
+
+.icon-down-dir::before {
+	content: "\25bc";
+} /* "▼" */
+
+.icon-star::before {
+	content: "\2605";
+} /* "★" */
+
+.icon-check-off::before {
+	content: "\2610";
+} /* "☐" */
+
+.icon-check-on::before {
+	content: "\2611";
+} /* "☑" */
+
+.icon-calendar::before {
+	content: "\e800";
+} /* "" */
+
+.icon-plus::before {
+	content: "\e801";
+} /* "" */
+
+.icon-minus::before {
+	content: "\e802";
+} /* "" */
+
+.icon-youtube::before {
+	content: "\f39e";
+} /* "" */
 
 
 /****************************************
@@ -94,11 +124,8 @@ ul {
 	background-color: #ffffff;
 	box-shadow: 5px 0 15px rgba(0,1,1,0.2),
 				-5px 0 15px rgba(0,1,1,0.2);
-
 }
 
-
-   
 .clearfix::after {
 	display: table;
 	content: "";
@@ -122,12 +149,9 @@ h3 {
 	font-size: 21px;
 }
 
-
 a {
 	text-decoration: none;
 }
-
-
 
 /*******************************************
 ********************************************
@@ -314,8 +338,7 @@ header {
 	padding-top: 141px;
 	padding-bottom: 20px;
 	vertical-align: middle;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .features-main h3 {
@@ -410,7 +433,6 @@ header {
 	width: 570px;
 	margin: 0 auto;
 	text-align: center;
-	
 }
 
 .booking-form-header {
@@ -432,9 +454,8 @@ header {
 
 .form-wrapper {
 	padding-left: 55px;
-	box-shadow: 7px 7px 15px rgba(0,1,1,0.15), 
+	box-shadow:	7px 7px 15px rgba(0,1,1,0.15), 
 				-7px 0 15px rgba(0,1,1,0.15);
-
 }
 
 .hotel-search-form {
@@ -443,7 +464,6 @@ header {
 	left: 316px;
 	z-index: 1;
 	background-color: white;
-
 }
 
 .booking-form-group {
@@ -482,7 +502,6 @@ header {
 	width: 180px;
 	line-height: 38px;
 }
-
 
 ::-webkit-input-placeholder {
 	padding-left: 15px;
@@ -706,7 +725,7 @@ input[type="checkbox"]:checked + label::before {
 	content: "\2611";
 }
 
-input[disabled="disabled"] + label {
+input[disabled] + label {
 	color: #6a6a6a;
 }
 
@@ -782,8 +801,7 @@ input[disabled="disabled"] + label {
 	position: relative;
 }
 
-.range-controls .scale {
-	
+.range-controls .scale {	
 	width: 318px;
 	height: 2px;
 	margin-bottom: 32px;
@@ -1073,7 +1091,6 @@ footer {
 }
 
 .footer-ref {
-	
 	display: inline-block;
 	vertical-align: middle;
 	width: 33.333%;
@@ -1087,7 +1104,6 @@ footer {
 }
 
 .footer-social {
-	
 	display: inline-block;
 	vertical-align: middle;
 	width: 33.333%;
@@ -1130,7 +1146,6 @@ footer {
 	vertical-align: middle;
 	width: 33.333%;
 	text-align: center;
-	
 }
 
 .footer-copyright p {
@@ -1155,5 +1170,3 @@ footer {
 .footer-copyright a:active {
 	background: url("../img/htmlacademy-active.png") no-repeat;
 }
-
-
