@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	</head>
 	<body class="index">
 		<div class="container">
@@ -99,36 +99,39 @@
 						<a class="booking-form-header" href="#">
 							<h3> Поиск гостиницы в Седоне</h3>
 						</a>
-						<form class="hotel-search-form"  action="https://echo.htmlacademy.ru" method="get">
-							<div class="form-wrapper">
-								<div class="booking-form-group">
-									<label for="in">Дата заезда:
-										<input type="text" name="in-field" id="in" placeholder="24 апреля 2016">
-										<a class="icon-calendar" href="#"></a>
-									</label>
+						<div class="hotel-search-form">
+							<form action="https://echo.htmlacademy.ru" method="get">
+								<div class="form-wrapper">
+									<div class="booking-form-group">
+										<label for="in">Дата заезда:
+											<input type="text" name="in-field" id="in" placeholder="24 апреля 2016" required>
+											<a class="icon-calendar" href="#"></a>
+										</label>
+									</div>
+									<div class="booking-form-group">
+										<label for="out">Дата выезда:
+											<input type="text" name="out-field" id="out" placeholder="4 июля 2016" required>
+											<a class="icon-calendar" href="#"></a>
+										</label>
+									</div>
+									<div class="booking-form-group">
+										<label for="adult">Взрослые:
+											<a class="icon-minus" href="#"></a>
+											<input type="text" name="adult-field" id="adult" placeholder="2" required>
+											<a class="icon-plus" href="#"></a>
+										</label>
+										<label for="children">Дети: 
+											<a class="icon-minus" href="#"></a>
+											<input type="text" name="children-field" id="children" placeholder="0">
+											<a class="icon-plus" href="#"></a>
+										</label>
+									</div>
+									<input type="submit" name="btn" value="Найти">
 								</div>
-								<div class="booking-form-group">
-									<label for="out">Дата выезда:
-										<input type="text" name="out-field" id="out" placeholder="4 июля 2016">
-										<a class="icon-calendar" href="#"></a>
-									</label>
-								</div>
-								<div class="booking-form-group">
-									<label for="adult">Взрослые:
-										<a class="icon-minus" href="#"></a>
-										<input type="text" name="adult-field" id="adult" placeholder="2">
-										<a class="icon-plus" href="#"></a>
-									</label>
-									<label for="children">Дети: 
-										<a class="icon-minus" href="#"></a>
-										<input type="text" name="children-field" id="children" placeholder="0">
-										<a class="icon-plus" href="#"></a>
-									</label>
-								</div>
-								<input type="submit" name="btn" value="Найти">
-							</div>
-						</form>
+							</form>
+						</div>
 						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838231.723917186!2d-112.32248177296368!3d34.84761612726858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sru!4v1473240378910" width="1200" height="596" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
@@ -147,5 +150,7 @@
 				</div>
 			</footer>
 		</div>
+		<script  src="js/script.min.js">
+		</script>
 	</body>
 </html>

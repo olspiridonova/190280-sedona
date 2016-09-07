@@ -458,12 +458,33 @@ header {
 				-7px 0 15px rgba(0,1,1,0.15);
 }
 
+@keyframes bounce {
+	0% {
+	transform: translateY(0px);
+	}
+	70% {
+	transform: translateY(30px);
+	}
+	90% {
+	transform: translateY(-10px);
+	}
+	100% {
+	transform: translateY(0);
+	}
+}
+
 .hotel-search-form {
+	display: none;
 	position: absolute;
 	width: 568px;
 	left: 316px;
 	z-index: 1;
-	background-color: white;
+	background-color: #ffffff;
+}
+
+.form-open {
+	display: block;
+	animation: bounce 0.6s;
 }
 
 .booking-form-group {
